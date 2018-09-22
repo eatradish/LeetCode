@@ -9,12 +9,10 @@ class Solution(object):
         d = {}
         l = []
         res = ''
-        n1 = 0
-        n2 = 0
         a = ''
         s = string.ascii_uppercase
-        for i in range(len(s)):d[i + 1] = s[i]
-        if n in d:return d[n]
+        for i in range(len(s)): d[i + 1] = s[i]
+        if n in d: return d[n]
         if n % 26 == 0:
             n = n / 26 - 1
             a ='Z'
@@ -23,7 +21,7 @@ class Solution(object):
             n = n // 26
             l.append(b)
         res = d[n]
-        for i in l[::-1]:res += d[i]
+        for i in l[::-1]: res += d[i]
         res += a
         return res
 

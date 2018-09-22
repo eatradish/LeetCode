@@ -10,7 +10,6 @@ class Solution:
             if nums[i] == val:
                 nums.remove(val)
                 i = 0
-            else:
-                i += 1
+            else: i += 1
         return len(nums)
 s = Solution().removeElement([3,2,2,3], 2)

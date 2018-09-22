@@ -4,7 +4,4 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        if len(s) == 0 or list(set(s)) == [' ']:
-            return 0
-        else:
-            return len((s.split())[-1])
+        return 0 if len(s) == 0 or list(set(s)) == [' '] else len((s.split())[-1])

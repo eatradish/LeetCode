@@ -12,10 +12,8 @@ class Solution(object):
         l[3] = [l[0], l[0] + l[1], l[1] + l[2], l[2]]
         l[4] = [l[0], l[0] + l[1], l[1] + l[2], l[2] + l[3], l[3]]
         """
-        if numRows == 0:
-            return []
-        if numRows == 1:
-            return l
+        if numRows == 0: return []
+        if numRows == 1: return l
         for i in range(1, numRows):
             l2 = []
             if len(l) == 1:

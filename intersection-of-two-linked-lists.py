@@ -24,22 +24,17 @@ class Solution(object):
         count = abs(headA_len - headB_len)
         n = 0
         while n < count:
-            if headA_len > headB_len:
-                headA = headA.next
-            if headB_len > headA_len:
-                headB = headB.next
+            if headA_len > headB_len: headA = headA.next
+            if headB_len > headA_len: headB = headB.next
             n += 1
-        if headA == None and headB == None:
-            return None
-        elif headA == None or headB == None:
-            return None
-        else:
-            pass
-        while headA != None and headB != None:
+        if not headA and not headB: return
+        elif not headA or not headB: return
+        else: pass
+        while headA and headB:
             if headA.val == headB.val:
                 result = headA
                 return result
             headA = headA.next
             headB = headB.next
-        return None
+        return
         

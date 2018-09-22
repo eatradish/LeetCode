@@ -6,6 +6,6 @@ class Solution(object):
         """
         d = {}
         for i in nums:
-            if i not in d:d[i] = 1
-            else:del d[i]
+            if i not in d: d[i] = 1
+            else: del d[i]
         return [i for i in d][0]

@@ -5,11 +5,9 @@ class Solution(object):
         :rtype: List[int]
         """
         s = ''
-        for i in range(len(digits)):
-            s = s + str(digits[i])
+        for i in range(len(digits)): s += str(digits[i])
         num = int(s)
         num = num + 1
         l = list(str(num))
-        for i in range(len(l)):
-            l[i] = int(l[i])
+        for i in range(len(l)): l[i] = int(l[i])
         return l

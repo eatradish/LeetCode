@@ -21,8 +21,7 @@ class MinStack(object):
         :rtype: void
         """
         del self.stack[0]
-        if self.stack != []:
-            self.min = min(self.stack)
+        if self.stack != []: self.min = min(self.stack)
         
 
     def top(self):

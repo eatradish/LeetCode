@@ -11,9 +11,8 @@ class Solution(object):
         :rtype: ListNode
         """
         l = []
-        if head == None:
-            return
-        while head != None:
+        if not head: return
+        while head:
             l.append(head.val)
             head = head.next
         l = list(set(l))

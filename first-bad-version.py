@@ -14,26 +14,20 @@ class Solution:
         """
         b = isBadVersion
         if n == 1:
-            if b(1) ==  True:
-                return 1
-            else:
-                return
+            if b(1): return 1
+            else: return
         if n == 2:
             for i in range(1, 3):
-                if b(i) == True:
-                    return i
+                if b(i): return i
         start = 1
         end = n
         ret = 0
         while start <= end:
             mid = int(start + (end - start) / 2)
-            if mid == n:
-                return mid
-            if b(mid) == True and b(mid+1) == True and b(mid-1) == True:
-                end = mid - 1
-            elif b(mid) == False:
-                start = mid + 1
-            elif b(mid) == True and (b(mid+1) == False or b(mid-1) == False):
+            if mid == n: return mid
+            if b(mid) and b(mid + 1) and b(mid-1): end = mid - 1
+            elif not b(mid): start = mid + 1
+            elif b(mid) and (not b(mid+1) or not b(mid-1)):
                 ret = mid
                 break
         return ret

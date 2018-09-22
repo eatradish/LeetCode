@@ -7,7 +7,6 @@ class Solution:
         result = []
         for j in range(len(A[0])):
             l = []
-            for i in range(len(A)):
-                l.append(A[i][j])
+            for i in range(len(A)): l.append(A[i][j])
             result.append(l)
         return result

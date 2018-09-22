@@ -9,8 +9,7 @@ class Solution:
         return len(nums)
 
     def removeDuplicates(self, nums):
-        if len(nums) == 0:
-            return 0
+        if len(nums) == 0: return 0
         i = 0
         for j in range(len(nums)):
             if nums[j] != nums[i]: 

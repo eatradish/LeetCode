@@ -6,19 +6,12 @@ class Solution:
         """
         result = ''
         tmp = []
-
-        if '' in strs or len(strs) == 0:
-            return result
-
+        if '' in strs or len(strs) == 0: return result
         min_len = len(strs[0])
-
         for i in range(len(strs)):
-            if len(strs[i]) < min_len:
-                min_len = len(strs[i])
-
+            if len(strs[i]) < min_len: min_len = len(strs[i])
         for j in range(1, min_len+1):
-            for i in range(len(strs)):
-                tmp.append(strs[i][:j])
+            for i in range(len(strs)): tmp.append(strs[i][:j])
             if len(set(tmp)) == 1:
                 tmp = []
                 result = strs[i][:j]

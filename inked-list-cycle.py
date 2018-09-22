@@ -14,10 +14,10 @@ class Solution(object):
         fast = copy(head.next)
         slow = head
         while fast:
-            if fast == slow:return True
+            if fast == slow: return True
             else:
                 fast = fast.next
-                if not fast:return False
+                if not fast: return False
                 else:
                     fast = fast.next
                     slow = slow.next
