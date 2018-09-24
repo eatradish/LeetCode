@@ -14,5 +14,5 @@ class Solution(object):
         if not root: return 0
         left = self.maxDepth(root.left)
         right = self.maxDepth(root.right)
-        h = (left if left > right else right) + 1
-        return h
+        return (left if left > right else right) + 1
+        
