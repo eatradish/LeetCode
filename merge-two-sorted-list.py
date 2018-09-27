@@ -12,10 +12,10 @@ class Solution:
         :rtype: ListNode
         """
         l = []
-        while l1 != None:
+        while l1:
             l.append(l1.val)
             l1 = l1.next
-        while l2 != None:
+        while l2:
             l.append(l2.val)
             l2 = l2.next
         l.sort()

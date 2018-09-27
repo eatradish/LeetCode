@@ -15,10 +15,10 @@ class Solution(object):
         p1 = headA
         p2 = headB
         result = None
-        while p1 != None:
+        while p1:
             headA_len += 1
             p1 = p1.next
-        while p2 != None:
+        while p2:
             headB_len += 1
             p2 = p2.next
         count = abs(headA_len - headB_len)

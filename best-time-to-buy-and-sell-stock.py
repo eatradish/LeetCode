@@ -4,8 +4,7 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        if prices == []:
-            return 0
+        if prices == []: return 0
         state_min = prices[0]
         state_max = 0
         for i in range(len(prices)):

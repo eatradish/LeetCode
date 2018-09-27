@@ -10,7 +10,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        if head == None: return False
+        if not head: return False
         fast = copy(head.next)
         slow = head
         while fast:
