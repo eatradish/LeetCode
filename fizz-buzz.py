@@ -6,8 +6,8 @@ class Solution(object):
         """
         res = []
         for i in range(1, n + 1):
-            res.append(str(i))
-            if i % 3 == 0 and i % 5 == 0: res[i - 1] = "FizzBuzz"
-            elif i % 3 == 0: res[i - 1] = "Fizz"
-            elif i % 5 == 0: res[i - 1] = "Buzz"
+            if i % 3 == 0 and i % 5 == 0: res.append("FizzBuzz")
+            elif i % 3 == 0: res.append("Fizz")
+            elif i % 5 == 0: res.append("Buzz")
+            else: res.append(str(i))
         return res
