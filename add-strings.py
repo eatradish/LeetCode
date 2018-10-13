@@ -15,7 +15,7 @@ class Solution(object):
         elif len(l1) < len(l2):
             for i in range(len(l2) - len(l1)): l1.insert(0, '0')
         for i in range(len(l1) - 1, -1, -1):
-            if int(l1[i]) + int(l2[i]) + count >= 10 and i != 0:
+            if int(l1[i]) + int(l2[i]) + carry >= 10 and i != 0:
                 a = str(int(l1[i]) + int(l2[i]) - 10 + carry)
                 carry = 1
                 res_l.append(a)
