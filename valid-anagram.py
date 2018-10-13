@@ -6,5 +6,5 @@ class Solution:
         :type t: str
         :rtype: bool
         """
-        return Counter(s) == Counter(p)
+        return Counter(s) == Counter(t)
 
